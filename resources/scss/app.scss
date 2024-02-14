@@ -1,1 +1,56 @@
+// IMPORTO BOOTSTRAP
 @import '~bootstrap/scss/bootstrap';
+
+// IMPORTO IL FONT
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+// REGOLE CSS GENERALI
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// BODY
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/////////// 
+/// HEADER
+/////////// 
+header {
+    height: 80px;
+    padding-top: 15px;
+    background-color: rgb(70, 136, 70);
+
+    .brand {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+
+    .nav-item {
+        font-size: 15px;
+        padding-top: 9px;
+        font-weight: 500;
+    }
+
+    .nav-link {
+        transition: 0.2s;
+        color: white;
+
+        &.active,
+        &:hover {
+            color: #fffa6c;
+            font-weight: 800;
+            transform: scale(1.1);
+            border-bottom: 3px solid #fffa6c;
+        }
+    }
+}
+
+
+/////////// 
+/// MAIN
+///////////
