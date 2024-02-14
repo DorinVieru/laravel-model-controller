@@ -7,7 +7,7 @@
                 <h1 class="fw-bold">I FILM DEL MOMENTO</h1>
                 <h6>(Questa lista è indipendente e stilata da BoolData Movies, non arrabbiatevi come babbuini se non vi piace)</h6>
             </div>
-            <div class="col-12 text-center text-danger">
+            <div class="col-12 text-center col-table-film">
                 <table class="table table-striped table-bordered">
                     <thead class="table-dark">
                         <tr>
@@ -15,7 +15,7 @@
                            <th>Titolo</th>
                            <th>Titolo Originale</th>
                            <th>Nazionalità</th>
-                           <th>Data di uscita</th>
+                           <th>Anno di uscita</th>
                            <th>Voto</th>
                         </tr>
                     </thead>
@@ -23,7 +23,7 @@
                         @foreach ($movies as $movie)
                             <tr>
                                 <td>{{ $movie['id'] }}</td>
-                                <td>{{ $movie['title'] }}</td>
+                                <td><a href="{{ route('show_movies', ['id' => $movie['id']]) }}">{{ $movie['title'] }}</a></td>
                                 <td>{{ $movie['original_title'] }}</td>
                                 <td>{{ $movie['nationality'] }}</td>
                                 <td>{{ $movie['date'] }}</td>

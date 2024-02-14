@@ -55,3 +55,15 @@ header {
 /////////// 
 /// MAIN
 ///////////
+.col-table-film{
+    a{
+        text-decoration: none;
+        color: rgb(70, 136, 70);
+        font-weight: 600;
+
+        &:hover{
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
