@@ -3,7 +3,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-6">
                 <a href="/" class="brand">
-                    Booldata Movies
+                    BoolData Movies
                 </a>
             </div>
             <div class="col-6">
