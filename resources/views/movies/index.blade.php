@@ -25,8 +25,8 @@
                                 <td>{{ $movie['id'] }}</td>
                                 <td><a href="{{ route('show_movies', ['id' => $movie['id']]) }}">{{ $movie['title'] }}</a></td>
                                 <td>{{ $movie['original_title'] }}</td>
-                                <td>{{ $movie['nationality'] }}</td>
-                                <td>{{ $movie['date'] }}</td>
+                                <td class="text-capitalize">{{ $movie['nationality'] }}</td>
+                                <td>{{ date('d/m/Y', strtotime($movie['date'])) }}</td>
                                 <td class="table-success">{{ $movie['vote'] }}</td>
                             </tr>
                         @endforeach
